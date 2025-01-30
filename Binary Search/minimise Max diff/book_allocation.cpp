@@ -35,6 +35,7 @@ int allocateMaxBookPages (vector<int> &nums, int st) {
     }
     return l; // maximum number of pages that minimun no of student have
 }
+
 int main()
 {
     

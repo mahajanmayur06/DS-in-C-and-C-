@@ -9,7 +9,6 @@ void search(string s1, string s2)
     int lps[m];
     lps[0] = 0;
     int l = 0, k = 1;
-
     while (k < m)
     {
         if (s2[k] == s2[l])

@@ -2,6 +2,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// minimum number of insertions to make string palindrome
+
 int lps(string str1) {
     string str2 = str1;
     reverse(str2.begin(), str2.end());

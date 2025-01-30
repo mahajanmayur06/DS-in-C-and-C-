@@ -38,6 +38,19 @@ int tabulation(vector<int>& coins, int amount) {
 }
 
 // space optmisation
+int space_opt(vector<int>& coins, int amount) {
+    int n = coins.size();
+    vector<int> dp(amount + 1, 0);
+    dp[0] = 1;
+    for (int i = 0; i < n; i++) {
+        for (int t = 0; t <= amount; t++) {
+            if (coins[i] <= t) {
+                dp[t] += dp[t - coins[i]];
+            }
+        }
+    }
+    return dp[amount];
+}
 
 int main()
 {
